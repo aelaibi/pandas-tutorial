@@ -3,7 +3,7 @@ Session 1
 =========
 
 You should do install if you have not already.
-We have Internet!  But, I have USB keys too.
+We have Internet!  But, I have USB keys.
 Format: lesson, exercises, solutions.
 
 Open Exercise-1
