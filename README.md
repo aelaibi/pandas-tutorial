@@ -7,7 +7,7 @@ If you have both `conda` and `git` on your system (otherwise, read the
 next section for more detailed instructions):
 
     $ conda install --yes jupyter matplotlib pandas
-    $ git clone https://github.com/aelaibi/pycon-pandas-tutorial.git
+    $ git clone https://github.com/aelaibi/pandas-tutorial.git
     $ cd pycon-pandas-tutorial
     $ build/BUILD.sh
     $ ipython notebook
@@ -25,7 +25,7 @@ Simply click the “Download ZIP” button over on the right-hand side of
 this repository’s front page at the following link, and its files will
 be delivered to you as a ZIP archive:
 
-https://github.com/aelaibi/pycon-pandas-tutorial
+https://github.com/aelaibi/pandas-tutorial
 
 Once you have unpacked the ZIP file, download the following four
 [IMDB](https://www.imdb.com/) data files and place them in the
