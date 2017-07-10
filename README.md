@@ -8,7 +8,7 @@ next section for more detailed instructions):
 
     $ conda install --yes jupyter matplotlib pandas
     $ git clone https://github.com/aelaibi/pandas-tutorial.git
-    $ cd pycon-pandas-tutorial
+    $ cd pandas-tutorial
     $ build/BUILD.sh
     $ ipython notebook
 
