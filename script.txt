@@ -22,6 +22,7 @@ FILTERING
 h = titles.head()
 h['year'] or h.year
 
+Math ops
 h.year + 1000
 h.year - 2000
 
@@ -33,6 +34,7 @@ h[(h.year > 1960) & (h.year < 1970)]
 t = titles.head()
 t.year > 1950 and t.year < 2000
 The truth value of a Series is ambiguous
+t.year > 1950 and t.year < 2000
 
 t.year // 10 * 10  # turn year to decade :)
 h[h.title == '...']
