@@ -1,23 +1,5 @@
 
 
-
-                                Welcome!
-
-
-   1. Install Pandas and the IPython Notebook
-
-      The Anaconda distribution includes Pandas built-in:
-      http://continuum.io/downloads
-
-
-   2. Download and unzip "Pandas-Tutorial.zip" from
-
-      https://github.com/brandon-rhodes/pycon-pandas-tutorial/releases
-
-
-   3. Start the IPython Notebook and visit the "pandas-tutorial"
-      folder from inside the .zip
-
 
 
   len(df)       series + value    df[df.c == value]
@@ -34,15 +16,6 @@
                         sys.setdefaultencoding('utf-8')
 
 
-
-
-
-
-      http://continuum.io/downloads
-
-      https://github.com/brandon-rhodes/pycon-pandas-tutorial/releases
-
-
 
   len(df)       series + value    df[df.c == value]
   df.head()     series + series2  df[(df.c >= value) & (df.d < value)]
@@ -156,8 +129,3 @@ s.str.startswith() s.plot(...)      df.plot(x='a', y='b', kind='bar')
                           Thanks!
 
                       Any questions?
-
-Local variables:
- mode:text
- mode:page
-End:

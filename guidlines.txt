@@ -1,0 +1,34 @@
+
+                                Welcome!
+
+
+    1. Install Pandas and the IPython Notebook
+
+      The Anaconda distribution includes Pandas built-in:
+      http://continuum.io/downloads
+
+
+    2. Download and unzip "Pandas-Tutorial.zip" from
+
+      https://github.com/aelaibi/pandas-tutorial/releases
+
+      Data ? 
+
+
+    3. Start the IPython Notebook and visit the "pandas-tutorial"
+      folder from inside the .zip
+
+
+    4. we will cover 5 sessions and will have coffe-time @ the end
+        Class format : lesson , exercice, solution
+
+
+Shutdown all running notebooks before starting  : it's more healthy and it saves RAM ;)  
+
+Encoding :
+    titles = pd.DataFrame.from_csv('data/titles.csv', index_col=None, encoding="utf-8")
+    titles.head()
+
+Jupiter notbooks hints : 2 mode : edit 
+
+Using Pandas is about a lot of explorations :)

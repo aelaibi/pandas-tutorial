@@ -17,6 +17,7 @@ titles.tail() and .tail(10)
 titles
 
 FILTERING
+    Series !
 
 h = titles.head()
 h['year'] or h.year
@@ -27,15 +28,20 @@ h.year - 2000
 h.year > 1960
 h[h.year > 1960]
 h[h.year > 1960 & h.year < 1970]
-h[(h.year > 1960) & (h.year < 1970)]
-t.year // 10 * 10
+h[(h.year > 1960) & (h.year < 1970)]   
+# explain and vs & 
+t = titles.head()
+t.year > 1950 and t.year < 2000
+The truth value of a Series is ambiguous
+
+t.year // 10 * 10  # turn year to decade :)
 h[h.title == '...']
 
 SORTING
 
-titles.sort(['title'])
-titles.sort(['year'])
-titles.sort(['year', 'title'])
+titles.sort_values(['title'])
+titles.sort_values(['year'])
+titles.sort_values(['year', 'title'])
 
 Session 2
 =========
@@ -55,7 +61,7 @@ titles.year.value_counts().sort_index().plot()
 titles.year.value_counts().sort_index().plot(kind='bar')
 
 c = cast
-c = c[c.character == 'Kermit the Frog]
+c = c[c.character == 'Kermit the Frog']
 c.plot(x='year', y='n', kind='scatter')
 
 COLUMNS
@@ -76,11 +82,16 @@ Session 3
 
 INDEXES - SPEED
 
-%%time cast[cast.title == 'Sleuth']
+%%time 
+cast[cast.title == 'Sleuth']
+
 c = cast.set_index(['title'])
-%%time c.loc['Sleuth']
+%%time 
+c.loc['Sleuth']
+
 c = cast.set_index(['title']).sort_index()
-%%time c.loc['Sleuth']
+%%time 
+c.loc['Sleuth']
 
 c = cast.set_index(['title', 'year']).sort_index()
 c.loc['Sleuth']
